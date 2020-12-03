@@ -1,0 +1,101 @@
+{
+	"VCAP_SERVICES": {
+		"html5-apps-repo": [
+			{
+				"label": "html5-apps-repo",
+				"provider": null,
+				"plan": "app-runtime",
+				"name": "Fiori_ME01_html_repo_runtime",
+				"tags": [
+					"html5appsrepo",
+					"html5-apps-repo-rt",
+					"html5-apps-rt",
+					"html5-apps-repo-dt",
+					"html5-apps-dt"
+				],
+				"instance_name": "Fiori_ME01_html_repo_runtime",
+				"binding_name": null,
+				"credentials": {
+					"vendor": "SAP",
+					"uri": "https://html5-apps-repo-rt.cfapps.us10.hana.ondemand.com",
+					"uaa": {
+						"uaadomain": "authentication.us10.hana.ondemand.com",
+						"tenantmode": "dedicated",
+						"sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+						"clientid": "sb-3f1e3fa8-b707-4159-a48e-09742b478657!b10210|html5-apps-repo-uaa!b424",
+						"verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwQ0oIBvtj/xa4AMVmO0HiR6PrqvZx7TkAT9UDgxB0KD3nEeJaQMWL+2TkmSVeVHutCHHbzUSQtLKAmr7thMYMOXb+rlP1XUcMp3+sIfidv4uFutfg4g2Op6iBcP3flT7OJ8WVQZ3uKlK5IoKKCl9eUJ2JswH4seNmg2YvEtthI59wBHoYYKqEoUVIIMYEYXvqj012x6N6G0bQKwwtb30wiXfa+jJQQDE51DZeOtmQT4KVKahRKKt57FwRTZDo1hd4/jB9L1XUKnoN8dXEmEZUMsFVi0HE5CgTQaKEGCBcDLx/3Ebg/R05X0Q1skaNuuSbk2uBn1ofgfnmgY82toOVQIDAQAB-----END PUBLIC KEY-----",
+						"apiurl": "https://api.authentication.us10.hana.ondemand.com",
+						"xsappname": "3f1e3fa8-b707-4159-a48e-09742b478657!b10210|html5-apps-repo-uaa!b424",
+						"identityzone": "c066c89ctrial",
+						"identityzoneid": "74eb56ad-a063-4160-9762-72918c86a12e",
+						"clientsecret": "GaUcqn8CYO7QDI6l1VSQL7YgdKY=",
+						"tenantid": "74eb56ad-a063-4160-9762-72918c86a12e",
+						"url": "https://c066c89ctrial.authentication.us10.hana.ondemand.com"
+					},
+					"grant_type": "client_credentials",
+					"sap.cloud.service": "html5-apps-repo-rt"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "dest_Fiori_ME01",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_name": "dest_Fiori_ME01",
+				"binding_name": null,
+				"credentials": {
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"tenantmode": "dedicated",
+					"clientid": "sb-clone4013302dc24b4f83b0925748988da3d1!b10210|destination-xsappname!b62",
+					"instanceid": "4013302d-c24b-4f83-b092-5748988da3d1",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwQ0oIBvtj/xa4AMVmO0HiR6PrqvZx7TkAT9UDgxB0KD3nEeJaQMWL+2TkmSVeVHutCHHbzUSQtLKAmr7thMYMOXb+rlP1XUcMp3+sIfidv4uFutfg4g2Op6iBcP3flT7OJ8WVQZ3uKlK5IoKKCl9eUJ2JswH4seNmg2YvEtthI59wBHoYYKqEoUVIIMYEYXvqj012x6N6G0bQKwwtb30wiXfa+jJQQDE51DZeOtmQT4KVKahRKKt57FwRTZDo1hd4/jB9L1XUKnoN8dXEmEZUMsFVi0HE5CgTQaKEGCBcDLx/3Ebg/R05X0Q1skaNuuSbk2uBn1ofgfnmgY82toOVQIDAQAB-----END PUBLIC KEY-----",
+					"xsappname": "clone4013302dc24b4f83b0925748988da3d1!b10210|destination-xsappname!b62",
+					"identityzone": "c066c89ctrial",
+					"clientsecret": "WTrbVCLNMqarzFWZ5d0o77dBAT4=",
+					"tenantid": "74eb56ad-a063-4160-9762-72918c86a12e",
+					"uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+					"url": "https://c066c89ctrial.authentication.us10.hana.ondemand.com"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
+{
+	"VCAP_APPLICATION": {
+		"cf_api": "https://api.cf.us10.hana.ondemand.com",
+		"limits": {
+			"fds": 16384,
+			"mem": 256,
+			"disk": 256
+		},
+		"application_name": "fiori-me01-approuter",
+		"application_uris": [
+			"c066c89ctrial-dev-fiori-me01-approuter.cfapps.us10.hana.ondemand.com"
+		],
+		"name": "fiori-me01-approuter",
+		"space_name": "dev",
+		"space_id": "09a76046-61c4-4596-8f33-8aaed4cb0243",
+		"organization_id": "a932edc8-4945-4160-b69c-31379d326d3c",
+		"organization_name": "c066c89ctrial",
+		"uris": [
+			"c066c89ctrial-dev-fiori-me01-approuter.cfapps.us10.hana.ondemand.com"
+		],
+		"users": null,
+		"process_id": "1e76748f-1aa4-495d-9ac6-08968738d0da",
+		"process_type": "web",
+		"application_id": "1e76748f-1aa4-495d-9ac6-08968738d0da",
+		"version": "05154f01-2f0d-4751-816f-dd03ef596ea2",
+		"application_version": "05154f01-2f0d-4751-816f-dd03ef596ea2"
+	}
+}

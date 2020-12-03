@@ -1,0 +1,46 @@
+## Generated mta.yaml based on template version 0.2.0
+## appName = capire-bookshop
+## language=nodejs; multiTenant=false
+## approuter=
+_schema-version: '3.1'
+ID: sap.capire-bookshop
+version: 1.0.0
+description: "A simple bookshop application, build in a self-contained all-in-one fashion, i.e. w&#x2F;o reusing other packages."
+parameters:
+  enable-parallel-deployments: true
+  
+  
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install
+      - npx cds build
+
+modules:
+ # --------------------- SERVER MODULE ------------------------
+ - name: capire-bookshop-srv
+ # ------------------------------------------------------------
+   type: nodejs
+   path: gen/srv
+   properties:
+     EXIT: 1  # required by deploy.js task to terminate 
+   requires:
+     - name: SUN_SRV01
+     - name: sun-uaa
+
+
+resources:
+ - name: SUN_SRV01
+   type: org.cloudfoundry.existing-service
+   parameters:
+     service-name: SUN_SRV01
+
+ - name: sun-uaa
+   type: org.cloudfoundry.managed-service
+   parameters:
+     path: ./xs-security.json
+     service: xsuaa
+     service-plan: application 
+
+

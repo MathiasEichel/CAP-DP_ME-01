@@ -1,0 +1,18 @@
+  // "url": "https://my302085-api.s4hana.ondemand.com/sap/opu/odata/sap/API_BUSINESS_PARTNER",
+          // "username": "CSCC_IN",
+          // "password": "Sab80166_Sab80166_Sab80166"
+          "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/API_BUSINESS_PARTNER"
+          
+          "Description": "Gateway Service ES5",
+          "Type": "HTTP",
+          "sap-platform": "ABAP",
+          "HTML5.DynamicDestination": "true",
+          "Authentication": "BasicAuthentication", 
+          "WebIDEUsage": "odata_abap",
+          "WebIDEEnabled": "true",
+          "ProxyType": "Internet",
+          "sap-client": "002",
+          "WebIDESystem": "Gateway",
+          "url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/API_BUSINESS_PARTNER",
+				"username": "S0016960423 ",
+				"password": "sab80166"

@@ -1,0 +1,10 @@
+{
+	"destinations": [
+		{
+			"name": "SUN_SRV01",
+			"url": "https://myHost-api",
+			"username": "SystemUser",
+			"password": "Pwd_Systemuser"
+		}	
+	]
+}

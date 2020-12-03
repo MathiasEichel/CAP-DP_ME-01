@@ -1,0 +1,11 @@
+
+{
+	"destinations": [
+		{
+			"name": "SUN_SRV01",
+			"url": "https://my302085-api.s4hana.ondemand.com/sap/opu/odata/sap/API_BUSINESS_PARTNER",
+			"username": "CSCC_IN",
+			"password": "Sab80166_Sab80166_Sab80166"
+		}	
+	]
+}

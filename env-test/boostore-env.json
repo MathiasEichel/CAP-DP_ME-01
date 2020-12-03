@@ -1,0 +1,61 @@
+{
+	"VCAP_SERVICES": {
+		"hanatrial": [
+			{
+				"label": "hanatrial",
+				"provider": null,
+				"plan": "hdi-shared",
+				"name": "bookstore-hana",
+				"tags": [
+					"hana",
+					"database",
+					"relational"
+				],
+				"instance_name": "bookstore-hana",
+				"binding_name": null,
+				"credentials": {
+					"host": "zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com",
+					"port": "21022",
+					"driver": "com.sap.db.jdbc.Driver",
+					"url": "jdbc:sap://zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com:21022?encrypt=true&validateCertificate=true&currentschema=30767D26773F4FACBA7859A56098ACFE",
+					"schema": "30767D26773F4FACBA7859A56098ACFE",
+					"hdi_user": "30767D26773F4FACBA7859A56098ACFE_CYVHTQOENO1JXUMFNPRDJENJT_DT",
+					"hdi_password": "Aq2tsroncj93MjiOZgxk_zXW.FwPTt-a71zpon4BvF17--h1.Iq7vbJxT4uxlrm3kcWPsPLOQ-T3gArkz5idrcJaKKHr.7MUt9dvVXEBIoIwvB7RzACp3ZQjHwTJ6sJB",
+					"user": "30767D26773F4FACBA7859A56098ACFE_CYVHTQOENO1JXUMFNPRDJENJT_RT",
+					"password": "Fs0e4xt9zMDqSAEl.rtZC9qo5dyBFuUMR.gOHZT-PC6NMfWn.kFASXh9D3R1rzhoQ6Gt7YwdzNn5l9SFrnZ-.g3rUCKjqg8sxEIGVVdC8Fl1gwCXv0-r09N5wSKU_Oyb",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----\n"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
+{
+	"VCAP_APPLICATION": {
+		"cf_api": "https://api.cf.us10.hana.ondemand.com",
+		"limits": {
+			"fds": 16384,
+			"mem": 1024,
+			"disk": 1024
+		},
+		"application_name": "bookstore",
+		"application_uris": [
+			"bookstore-empathic-genet-vr.cfapps.us10.hana.ondemand.com"
+		],
+		"name": "bookstore",
+		"space_name": "dev",
+		"space_id": "09a76046-61c4-4596-8f33-8aaed4cb0243",
+		"organization_id": "a932edc8-4945-4160-b69c-31379d326d3c",
+		"organization_name": "c066c89ctrial",
+		"uris": [
+			"bookstore-empathic-genet-vr.cfapps.us10.hana.ondemand.com"
+		],
+		"users": null,
+		"process_id": "0bc67655-a3cb-4d63-94bd-b8fac55b902f",
+		"process_type": "web",
+		"application_id": "0bc67655-a3cb-4d63-94bd-b8fac55b902f",
+		"version": "99456d68-d164-451b-8bf6-82a3c5791673",
+		"application_version": "99456d68-d164-451b-8bf6-82a3c5791673"
+	}
+}

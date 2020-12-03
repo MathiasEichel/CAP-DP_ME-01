@@ -1,0 +1,91 @@
+{
+	"VCAP_SERVICES": {
+		"hanatrial": [
+			{
+				"label": "hanatrial",
+				"provider": null,
+				"plan": "hdi-shared",
+				"name": "bookshop-db-hdi-container",
+				"tags": [
+					"hana",
+					"database",
+					"relational"
+				],
+				"instance_name": "bookshop-db-hdi-container",
+				"binding_name": null,
+				"credentials": {
+					"host": "zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com",
+					"port": "21022",
+					"driver": "com.sap.db.jdbc.Driver",
+					"url": "jdbc:sap://zeus.hana.prod.us-east-1.whitney.dbaas.ondemand.com:21022?encrypt=true&validateCertificate=true&currentschema=AE72810697454428A2B01DCF096F5B5B",
+					"schema": "AE72810697454428A2B01DCF096F5B5B",
+					"hdi_user": "AE72810697454428A2B01DCF096F5B5B_AEEVLTC6Q6VOPDAJCN0OADFSX_DT",
+					"hdi_password": "Po2oiwhQhwg-StFEHEubMXR3pxSl_giN73t2t8Zu07uroy_7J1HnPB7ZCK-L6.OUiVu-_dk0K0X420evS9b9oxgxgtrxyF--LJW2EFgYitKbraMQZ5sNtoL2v0pOmzho",
+					"user": "AE72810697454428A2B01DCF096F5B5B_AEEVLTC6Q6VOPDAJCN0OADFSX_RT",
+					"password": "Uc0DLQL7BNExUPPI97es2QuOPKloRTLyu_fFeivppwoBNzaS-XZ1NBClMSrRG2KICMhjO4M3X7T3oJCqBK0vl-qRM1i_UeumOIk4MEF8uKuI3gZU3HUoPb1K_ZytpvEb",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----\n"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "dest-me01",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_name": "dest-me01",
+				"binding_name": null,
+				"credentials": {
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"tenantmode": "dedicated",
+					"clientid": "sb-clone13ecf173ede344778e7cf212b09e2067!b10210|destination-xsappname!b62",
+					"instanceid": "13ecf173-ede3-4477-8e7c-f212b09e2067",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwQ0oIBvtj/xa4AMVmO0HiR6PrqvZx7TkAT9UDgxB0KD3nEeJaQMWL+2TkmSVeVHutCHHbzUSQtLKAmr7thMYMOXb+rlP1XUcMp3+sIfidv4uFutfg4g2Op6iBcP3flT7OJ8WVQZ3uKlK5IoKKCl9eUJ2JswH4seNmg2YvEtthI59wBHoYYKqEoUVIIMYEYXvqj012x6N6G0bQKwwtb30wiXfa+jJQQDE51DZeOtmQT4KVKahRKKt57FwRTZDo1hd4/jB9L1XUKnoN8dXEmEZUMsFVi0HE5CgTQaKEGCBcDLx/3Ebg/R05X0Q1skaNuuSbk2uBn1ofgfnmgY82toOVQIDAQAB-----END PUBLIC KEY-----",
+					"xsappname": "clone13ecf173ede344778e7cf212b09e2067!b10210|destination-xsappname!b62",
+					"identityzone": "c066c89ctrial",
+					"clientsecret": "9NuRIaxZOdPUxdouhO8DEvH2cYQ=",
+					"tenantid": "74eb56ad-a063-4160-9762-72918c86a12e",
+					"uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+					"url": "https://c066c89ctrial.authentication.us10.hana.ondemand.com"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
+{
+	"VCAP_APPLICATION": {
+		"cf_api": "https://api.cf.us10.hana.ondemand.com",
+		"limits": {
+			"fds": 16384,
+			"mem": 128,
+			"disk": 1024
+		},
+		"application_name": "bookshop-srv",
+		"application_uris": [
+			"bookshop-srv-zany-badger-sw.cfapps.us10.hana.ondemand.com"
+		],
+		"name": "bookshop-srv",
+		"space_name": "dev",
+		"space_id": "09a76046-61c4-4596-8f33-8aaed4cb0243",
+		"organization_id": "a932edc8-4945-4160-b69c-31379d326d3c",
+		"organization_name": "c066c89ctrial",
+		"uris": [
+			"bookshop-srv-zany-badger-sw.cfapps.us10.hana.ondemand.com"
+		],
+		"users": null,
+		"process_id": "d09892d6-a239-4f52-bc2a-9bf43f9f667f",
+		"process_type": "web",
+		"application_id": "d09892d6-a239-4f52-bc2a-9bf43f9f667f",
+		"version": "bc2a043e-a0a4-409d-814f-29e2528013d4",
+		"application_version": "bc2a043e-a0a4-409d-814f-29e2528013d4"
+	}
+}
